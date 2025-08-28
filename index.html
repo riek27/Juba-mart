@@ -847,12 +847,6 @@
         <i class="fas fa-volume-up"></i>
     </div>
 
-    </div>
-
-    <div class="audio-control" onclick="toggleAudio()">
-        <i class="fas fa-volume-up"></i>
-    </div>
-
     <audio id="click-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3"></audio>
     <audio id="success-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3"></audio>
     <audio id="hover-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-mouse-click-1096.mp3"></audio>
@@ -1069,6 +1063,30 @@
             };
             
             addMessage();
+        }
+        
+        // Reset demo function
+        function resetDemo() {
+            // Reset current step
+            currentStep = 1;
+            
+            // Reset progress bar
+            updateProgress();
+            
+            // Reset wallet connect subtitle
+            const walletSection = document.getElementById('wallet-connect');
+            walletSection.querySelector('.subtitle').textContent = 
+                "Securely link your wallet to unlock intelligent protection and yield opportunities";
+            
+            // Clear terminal output
+            const terminal = document.getElementById('terminal-output');
+            terminal.innerHTML = '';
+            
+            // Show the first step
+            showStep(currentStep);
+            
+            // Play sound
+            playSound('click');
         }
         
         // Initialize the first step
