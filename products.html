@@ -3,19 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - JunubMart</title>
-    <meta name="description" content="Browse our wide selection of quality products including electronics, fashion, and more at JunubMart.">
-    <meta name="keywords" content="JunubMart, products, electronics, fashion, shopping, Juba, South Sudan">
-    <meta name="author" content="JunubMart">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Products - Simba Cement Wholesale</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,378 +12,173 @@
         <div class="container">
             <nav class="navbar">
                 <a href="index.html" class="logo">
-                    <img src="assets/junubmart-logo.png" alt="JunubMart" class="logo-image">
-                    <div class="logo-text">
-                        JUNUB <span>MART</span>
-                    </div>
+                    <i class="fas fa-truck-moving"></i>
+                    Simba Cement
                 </a>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="products.html" class="nav-link active">Products</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Products Page Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="page-hero">
-            <div class="container">
-                <div class="page-hero-content">
-                    <h1>Our Products</h1>
-                    <p>Discover our wide range of quality products</p>
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Our Products</h1>
+            <p>High-quality cement for every construction need</p>
+        </div>
+    </section>
+
+    <!-- Products Content -->
+    <section class="products-content">
+        <div class="container">
+            <div class="product-details fade-up">
+                <div class="product-detail-card">
+                    <div class="product-detail-img product-detail-1"></div>
+                    <div class="product-detail-content">
+                        <h2>42.5 Grade Cement</h2>
+                        <p class="product-subtitle">High strength for foundations & heavy-duty projects</p>
+                        <p>Our 42.5 Grade Cement is engineered for maximum strength and durability, making it ideal for structural applications including foundations, columns, beams, and slabs. With consistent quality and reliable performance, it's the preferred choice for contractors working on commercial and residential projects that demand the highest standards.</p>
+                        <div class="product-specs">
+                            <h3>Specifications:</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> High compressive strength</li>
+                                <li><i class="fas fa-check"></i> Excellent durability</li>
+                                <li><i class="fas fa-check"></i> Low heat of hydration</li>
+                                <li><i class="fas fa-check"></i> Superior sulfate resistance</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
+                </div>
+                
+                <div class="product-detail-card reverse">
+                    <div class="product-detail-img product-detail-2"></div>
+                    <div class="product-detail-content">
+                        <h2>32.5 Grade Cement</h2>
+                        <p class="product-subtitle">Smooth & reliable for plastering and finishing</p>
+                        <p>Our 32.5 Grade Cement offers excellent workability and finish, making it perfect for plastering, blockwork, and other finishing applications. It provides a smooth, consistent finish while maintaining good strength properties for non-structural applications.</p>
+                        <div class="product-specs">
+                            <h3>Specifications:</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Excellent workability</li>
+                                <li><i class="fas fa-check"></i> Smooth finish</li>
+                                <li><i class="fas fa-check"></i> Good setting time</li>
+                                <li><i class="fas fa-check"></i> Consistent quality</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Products Section -->
-        <section class="section">
-            <div class="container">
-                <!-- Filter Options -->
-                <div class="filter-container">
-                    <button class="filter-btn active" data-category="all">All Products</button>
-                    <button class="filter-btn" data-category="electronics">Electronics</button>
-                    <button class="filter-btn" data-category="fashion">Fashion</button>
-                    <button class="filter-btn" data-category="home">Home & Kitchen</button>
-                </div>
-
-                <!-- Products Grid -->
-                <div class="products-grid">
-                    <!-- Tablets Category -->
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="iPad 5th Generation">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">iPad 5th Generation</h3>
-                            <p class="product-description">9.7" Retina Display, A9 Chip, up to 10-hour battery life. Ideal for students and professionals.</p>
-                            <div class="product-price">$200</div>
-                            <div class="product-features">
-                                <span>Slightly used</span>
-                                <span>6-month warranty</span>
-                                <span>Includes Tablet Case (Gift)</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
+            
+            <div class="additional-services fade-up">
+                <h2>Additional Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-pallet"></i>
+                        <h3>Bulk Orders</h3>
+                        <p>Special pricing and dedicated service for hardware shops, contractors, and large projects. We offer flexible payment terms and scheduled deliveries to match your project timeline.</p>
                     </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="iPad 2">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">iPad 2</h3>
-                            <p class="product-description">Perfect for learning, entertainment, and family use with parental controls.</p>
-                            <div class="product-price">Contact for Price</div>
-                            <div class="product-features">
-                                <span>Family friendly</span>
-                                <span>Entertainment & learning</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
+                    <div class="service-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Delivery Service</h3>
+                        <p>Fast and reliable delivery across Juba with our dedicated fleet. We ensure timely delivery to keep your projects on schedule, with options for same-day delivery when needed.</p>
                     </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1590658165737-15a047b8b5e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="8-inch Kids Tablet">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">8-inch Kids Tablet</h3>
-                            <p class="product-description">Educational tablet with English & Arabic keyboard, wireless mouse, and pre-installed learning apps.</p>
-                            <div class="product-price">$100</div>
-                            <div class="product-features">
-                                <span>Educational apps pre-installed</span>
-                                <span>Protective cover included</span>
-                                <span>Free gifts</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
+                    <div class="service-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Reseller Program</h3>
+                        <p>Partner with us to grow your business. We offer competitive wholesale pricing, marketing support, and exclusive benefits for our reseller partners.</p>
                     </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Notebook Core Tablet">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Notebook Core Tablet (10-inch)</h3>
-                            <p class="product-description">Comes with keyboard, mouse, stylus pen, and power bank. Perfect for work, study, and entertainment.</p>
-                            <div class="product-price">$150</div>
-                            <div class="product-features">
-                                <span>Complete accessory bundle</span>
-                                <span>Unbelievable offer</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Notebook Galaxy Tablet">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Notebook Galaxy Tablet (11-inch)</h3>
-                            <p class="product-description">Large display tablet with keyboard, mouse, stylus pen, and earphones for multitasking.</p>
-                            <div class="product-price">$150</div>
-                            <div class="product-features">
-                                <span>Large display</span>
-                                <span>Multitasking capability</span>
-                                <span>Includes earphones</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Latest Notebook Tablet">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Latest Notebook Tablet</h3>
-                            <p class="product-description">Special offer tablet perfect for learning, office work, and entertainment.</p>
-                            <div class="product-price">$150</div>
-                            <div class="product-features">
-                                <span>Special offer</span>
-                                <span>Limited stock</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Smartphones Category -->
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tecno Camon 40 Series">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Tecno Camon 40 Series</h3>
-                            <p class="product-description">High-performance smartphones with excellent camera capabilities and modern features.</p>
-                            <div class="product-price">Contact for Price</div>
-                            <div class="product-features">
-                                <span>Camon 40 & Premier models</span>
-                                <span>High performance</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Samsung S23 Ultra">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Samsung S23 Ultra</h3>
-                            <p class="product-description">Premium smartphone with top-tier performance, camera system, and display quality.</p>
-                            <div class="product-price">Contact for Price</div>
-                            <div class="product-features">
-                                <span>Premium performance</span>
-                                <span>Advanced camera system</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="iPhone 16 Screen Replacement">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">iPhone 16 Screen Replacement</h3>
-                            <p class="product-description">Professional screen replacement service for iPhone 16 models.</p>
-                            <div class="product-price">Contact for Price</div>
-                            <div class="product-features">
-                                <span>Professional service</span>
-                                <span>Quality parts</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Accessories Category -->
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1601593346740-925612772716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Tablet Cases">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Tablet Cases</h3>
-                            <p class="product-description">Protective cases for various tablet models, available in different colors and designs.</p>
-                            <div class="product-price">From $15</div>
-                            <div class="product-features">
-                                <span>Multiple sizes</span>
-                                <span>Various colors</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Wireless Mouse">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Wireless Mouse</h3>
-                            <p class="product-description">Comfortable wireless mouse with reliable connectivity and long battery life.</p>
-                            <div class="product-price">$12</div>
-                            <div class="product-features">
-                                <span>Wireless connectivity</span>
-                                <span>Long battery life</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="English + Arabic Keyboard">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">English + Arabic Keyboard</h3>
-                            <p class="product-description">Dual-language keyboard with both English and Arabic characters for versatile use.</p>
-                            <div class="product-price">$25</div>
-                            <div class="product-features">
-                                <span>Dual language</span>
-                                <span>Compatible with tablets</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1616343932383-eb0a6e022d52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Stylus Pens">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Stylus Pens</h3>
-                            <p class="product-description">Precision stylus pens for drawing, note-taking, and tablet navigation.</p>
-                            <div class="product-price">$10</div>
-                            <div class="product-features">
-                                <span>Precision tip</span>
-                                <span>Tablet compatible</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1609592810793-abeb6c64b5c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Power Banks">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Power Banks</h3>
-                            <p class="product-description">Portable power banks to keep your devices charged on the go.</p>
-                            <div class="product-price">From $20</div>
-                            <div class="product-features">
-                                <span>Multiple capacities</span>
-                                <span>Fast charging</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Earphones">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Earphones</h3>
-                            <p class="product-description">Quality earphones for clear audio and comfortable listening experience.</p>
-                            <div class="product-price">$15</div>
-                            <div class="product-features">
-                                <span>Clear sound quality</span>
-                                <span>Comfortable fit</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Learning & Tech Tools -->
-                    <div class="product-card" data-category="electronics">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1581094794321-8410bd8b04da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Translation Pen">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title">Translation Pen</h3>
-                            <p class="product-description">Real-time language translation pen to break language barriers for learning and communication.</p>
-                            <div class="product-price">$45</div>
-                            <div class="product-features">
-                                <span>Real-time translation</span>
-                                <span>Multiple languages</span>
-                                <span>Learning tool</span>
-                            </div>
-                            <a href="contact.html" class="btn btn-primary">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Load More Button -->
-                <div style="text-align: center; margin-top: 3rem;">
-                    <button class="btn btn-secondary">Load More Products</button>
                 </div>
             </div>
-        </section>
-    </main>
+            
+            <div class="price-list fade-up">
+                <h2>Download Our Price List</h2>
+                <p>Get our current pricing for all products and services</p>
+                <a href="#" class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Download Price List (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="assets/junubmart-logo.png" alt="JunubMart" class="footer-logo-image">
-                        <div class="footer-logo-text">
-                            JUNUB <span>MART</span>
-                        </div>
-                    </div>
-                    <p>Your trusted online store in Juba, South Sudan. We bring quality products and reliable services to your doorstep.</p>
+                    <h3>Simba Cement</h3>
+                    <p>Your trusted cement supplier in Juba, South Sudan. Building South Sudan, one bag at a time.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="products.html">Products</a>
-                        <a href="services.html">Services</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Customer Service</h3>
-                    <div class="footer-links">
-                        <a href="#">FAQ</a>
-                        <a href="#">Shipping Policy</a>
-                        <a href="#">Returns & Refunds</a>
-                        <a href="#">Payment Methods</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html">42.5 Grade Cement</a></li>
+                        <li><a href="products.html">32.5 Grade Cement</a></li>
+                        <li><a href="products.html">Bulk Orders</a></li>
+                        <li><a href="products.html">Delivery Service</a></li>
+                        <li><a href="products.html">Reseller Program</a></li>
+                    </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact Info</h3>
-                    <div class="footer-links">
-                        <p><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</p>
-                        <p><i class="fas fa-phone"></i> +211 123 456 789</p>
-                        <p><i class="fas fa-envelope"></i> info@junubmart.com</p>
-                    </div>
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Hai Mauna, Yei Road, Juba, South Sudan</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>0921 000 400</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>simbacement.jubasupply@gmail.com</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 JunubMart. All rights reserved.</p>
+                <p>&copy; 2025 Simba Cement Wholesale - Juba Supply Trucks. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/0921000400" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Font Awesome and Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="script.js"></script>
 </body>
