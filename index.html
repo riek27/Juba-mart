@@ -3,134 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simba Cement Wholesale - Juba Supply Trucks</title>
+    <title>Bakumba Spare Parts | Heavy-Duty Engine & Generator Parts</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header & Navigation -->
     <header>
         <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-truck-moving"></i>
-                    Simba Cement
-                </a>
+            <a href="index.html" class="logo">Bakumba Spare Parts</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="delivery.html">Delivery</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html#generator-parts">Generator Spare Parts</a>
+                            <a href="services.html#engine-kits">Engine Service Kits</a>
+                            <a href="services.html#maintenance">Maintenance & Repairs</a>
+                            <a href="services.html#filters">Filters & Accessories</a>
+                        </div>
+                    </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-slideshow">
-            <div class="slide slide-1 active"></div>
-            <div class="slide slide-2"></div>
-            <div class="slide slide-3"></div>
+    <!-- Hero Section with Slideshow -->
+    <section class="hero">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url('https://source.unsplash.com/random/1920x1080/?generator,industrial')"></div>
+            <div class="slide" style="background-image: url('https://source.unsplash.com/random/1920x1080/?engine,parts,mechanic')"></div>
+            <div class="slide" style="background-image: url('https://source.unsplash.com/random/1920x1080/?diesel,generator,maintenance')"></div>
         </div>
-        <div class="hero-content">
-            <h1>Reliable Cement Supply Across Juba 🚛</h1>
-            <p>Fast Delivery. Fair Prices. Trusted Quality.</p>
-            <div class="hero-buttons">
-                <a href="tel:0921000400" class="btn btn-primary">
-                    <i class="fas fa-phone"></i> Call Now
-                </a>
-                <a href="https://wa.me/0921000400" target="_blank" class="btn btn-secondary">
-                    <i class="fab fa-whatsapp"></i> WhatsApp Us
-                </a>
+        <div class="hero-overlay">
+            <div class="container">
+                <h1>Your Trusted Partner for Heavy-Duty Engine & Generator Spare Parts</h1>
+                <p>Supplying genuine Perkins, FG Wilson, Cummins, and CAT components across South Sudan.</p>
+                <a href="contact.html" class="btn">Contact Us Today</a>
             </div>
         </div>
     </section>
 
-    <!-- Highlights Section -->
-    <section class="highlights">
+    <!-- Features Section -->
+    <section class="features">
         <div class="container">
-            <div class="section-title fade-up">
-                <h2>Why Choose Simba Cement?</h2>
-                <p>We provide the highest quality cement with reliable delivery across Juba</p>
-            </div>
-            <div class="highlights-grid">
-                <div class="highlight-card fade-up">
-                    <div class="highlight-icon">
-                        <i class="fas fa-money-bill-wave"></i>
+            <h2 class="section-title">Why Choose Bakumba Spare Parts</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <h3>Best Wholesale Prices</h3>
-                    <p>Competitive pricing for bulk orders with no compromise on quality.</p>
+                    <h3>Genuine Parts</h3>
+                    <p>We supply only authentic parts from trusted manufacturers to ensure optimal performance and longevity for your equipment.</p>
                 </div>
-                <div class="highlight-card fade-up">
-                    <div class="highlight-icon">
-                        <i class="fas fa-shipping-fast"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Fast & Reliable Delivery</h3>
-                    <p>Timely delivery across Juba with our dedicated fleet of trucks.</p>
+                    <h3>Reliable Service</h3>
+                    <p>Our experienced team provides expert advice and support to keep your operations running smoothly.</p>
                 </div>
-                <div class="highlight-card fade-up">
-                    <div class="highlight-icon">
-                        <i class="fas fa-boxes"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
                     </div>
-                    <h3>Bulk & Small Orders Welcome</h3>
-                    <p>We serve both large contractors and individual homeowners.</p>
+                    <h3>Affordable Prices</h3>
+                    <p>Competitive pricing without compromising on quality, delivering exceptional value for your investment.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
+    <!-- Services Preview Section -->
+    <section class="services-preview">
         <div class="container">
-            <div class="section-title fade-up">
-                <h2>Our Products & Services</h2>
-                <p>High-quality cement and construction solutions for every project</p>
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://source.unsplash.com/random/600x400/?generator,engine,parts')"></div>
+                    <div class="service-content">
+                        <h3>Generator Spare Parts</h3>
+                        <p>Genuine parts for Perkins, FG Wilson, Cummins, and CAT generators to ensure reliable power generation.</p>
+                        <a href="services.html#generator-parts" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://source.unsplash.com/random/600x400/?engine,maintenance,kit')"></div>
+                    <div class="service-content">
+                        <h3>Engine Service Kits</h3>
+                        <p>500-hour and 1000-hour maintenance kits for Perkins engines with all necessary components.</p>
+                        <a href="services.html#engine-kits" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://source.unsplash.com/random/600x400/?mechanic,workshop,generator')"></div>
+                    <div class="service-content">
+                        <h3>Maintenance & Repairs</h3>
+                        <p>Expert servicing for generators and heavy-duty engines to maximize lifespan and performance.</p>
+                        <a href="services.html#maintenance" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="products-grid">
-                <div class="product-card fade-up">
-                    <div class="product-img product-img-1"></div>
-                    <div class="product-content">
-                        <h3>42.5 Grade Cement</h3>
-                        <p>High strength for foundations & heavy-duty projects.</p>
-                        <a href="products.html" class="product-btn">Order Now</a>
+            <div class="text-center">
+                <a href="services.html" class="btn">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Bakumba Spare Parts has been our reliable partner for generator maintenance. Their genuine parts and professional service have kept our operations running smoothly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>James Loku</h4>
+                        <p>Construction Company Director</p>
                     </div>
                 </div>
-                <div class="product-card fade-up">
-                    <div class="product-img product-img-2"></div>
-                    <div class="product-content">
-                        <h3>32.5 Grade Cement</h3>
-                        <p>Smooth & reliable for plastering and finishing.</p>
-                        <a href="products.html" class="product-btn">Order Now</a>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"We've been using Bakumba for all our Perkins engine parts. The quality is exceptional and their customer service is outstanding. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Sarah Mohamed</h4>
+                        <p>Agricultural Business Owner</p>
                     </div>
                 </div>
-                <div class="product-card fade-up">
-                    <div class="product-img product-img-3"></div>
-                    <div class="product-content">
-                        <h3>Bulk Orders</h3>
-                        <p>For contractors and resellers with special pricing.</p>
-                        <a href="products.html" class="product-btn">Order Now</a>
-                    </div>
-                </div>
-                <div class="product-card fade-up">
-                    <div class="product-img product-img-4"></div>
-                    <div class="product-content">
-                        <h3>Delivery Service</h3>
-                        <p>Fast and citywide delivery across Juba.</p>
-                        <a href="delivery.html" class="product-btn">Order Now</a>
-                    </div>
-                </div>
-                <div class="product-card fade-up">
-                    <div class="product-img product-img-5"></div>
-                    <div class="product-content">
-                        <h3>Reseller Program</h3>
-                        <p>Partner with us to grow your business.</p>
-                        <a href="contact.html" class="product-btn">Order Now</a>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Power Your Operations?</h2>
+                <p>Contact us today for genuine spare parts and reliable service you can count on.</p>
+                <a href="contact.html" class="btn btn-light">Get In Touch</a>
             </div>
         </div>
     </section>
@@ -139,70 +159,55 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Simba Cement</h3>
-                    <p>Your trusted cement supplier in Juba, South Sudan. Building South Sudan, one bag at a time.</p>
+                <div class="footer-logo">
+                    <h2 class="logo">Bakumba Spare Parts</h2>
+                    <p>Your trusted partner for heavy-duty engine and generator spare parts in South Sudan.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-column">
+                <div class="footer-links">
                     <h3>Quick Links</h3>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="services.html">Our Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Products</h3>
-                    <ul class="footer-links">
-                        <li><a href="products.html">42.5 Grade Cement</a></li>
-                        <li><a href="products.html">32.5 Grade Cement</a></li>
-                        <li><a href="products.html">Bulk Orders</a></li>
-                        <li><a href="products.html">Delivery Service</a></li>
-                        <li><a href="products.html">Reseller Program</a></li>
+                <div class="footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#generator-parts">Generator Parts</a></li>
+                        <li><a href="services.html#engine-kits">Engine Service Kits</a></li>
+                        <li><a href="services.html#maintenance">Maintenance & Repairs</a></li>
+                        <li><a href="services.html#filters">Filters & Accessories</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Hai Mauna, Yei Road, Juba, South Sudan</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <span>0921 000 400</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>simbacement.jubasupply@gmail.com</span>
-                        </li>
-                    </ul>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Mahattah Yei, Opposite MCC Building, Juba, South Sudan</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+211 928 981 015<br>0928 981 015</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>daniellemi264@gmail.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Simba Cement Wholesale - Juba Supply Trucks. All Rights Reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2025 Bakumba Spare Parts. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/0921000400" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Font Awesome and Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="script.js"></script>
 </body>
