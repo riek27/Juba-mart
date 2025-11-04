@@ -3,134 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Simba Cement Wholesale</title>
+    <title>Contact Us | Bakumba Spare Parts</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header & Navigation -->
     <header>
         <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-truck-moving"></i>
-                    Simba Cement
-                </a>
+            <a href="index.html" class="logo">Bakumba Spare Parts</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="delivery.html">Delivery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html#generator-parts">Generator Spare Parts</a>
+                            <a href="services.html#engine-kits">Engine Service Kits</a>
+                            <a href="services.html#maintenance">Maintenance & Repairs</a>
+                            <a href="services.html#filters">Filters & Accessories</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Page Banner -->
-    <section class="page-banner">
-        <div class="banner-content">
-            <h1>Contact Us</h1>
-            <p>Get in touch for quotes, orders, or inquiries</p>
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080/?city,map,africa')"></div>
+        <div class="page-hero-overlay">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p>We're here to help with all your spare parts needs</p>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Content -->
-    <section class="contact-content">
+    <!-- Contact Section -->
+    <section class="contact-detail">
         <div class="container">
-            <div class="contact-grid fade-up">
+            <div class="contact-container">
                 <div class="contact-info">
-                    <h2>Get In Touch</h2>
-                    <p>We're here to help with your cement needs. Reach out to us through any of the following channels:</p>
+                    <h2>Contact Information</h2>
+                    <p>Have questions about our products or services? Reach out to our team for expert assistance. We're committed to providing timely responses and helpful solutions.</p>
                     
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>0921 000 400</p>
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Address</h3>
+                                <p>Mahattah Yei, Opposite MCC Building, Juba, South Sudan</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-whatsapp"></i>
-                            <div>
-                                <h4>WhatsApp</h4>
-                                <p>0921 000 400</p>
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>+211 928 981 015<br>0928 981 015</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>simbacement.jubasupply@gmail.com</p>
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>daniellemi264@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Address</h4>
-                                <p>Hai Mauna, Yei Road, Juba, South Sudan</p>
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="business-hours">
-                        <h3>Business Hours</h3>
-                        <ul>
-                            <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
-                            <li>Saturday: 9:00 AM - 4:00 PM</li>
-                            <li>Sunday: Closed</li>
-                        </ul>
+
+                    <div class="emergency-contact">
+                        <h3><i class="fas fa-exclamation-circle"></i> Emergency Service</h3>
+                        <p>For urgent generator or engine issues outside business hours, call our emergency line:</p>
+                        <p class="emergency-phone">+211 928 981 015</p>
                     </div>
                 </div>
-                
                 <div class="contact-form-container">
                     <h2>Send Us a Message</h2>
-                    <form class="contact-form" id="contactForm">
+                    <form id="contactForm" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
                         </div>
                         <div class="form-group">
-                            <label for="location">Location</label>
-                            <input type="text" id="location" name="location" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="grade">Cement Grade</label>
-                            <select id="grade" name="grade" required>
-                                <option value="">Select Grade</option>
-                                <option value="42.5">42.5 Grade Cement</option>
-                                <option value="32.5">32.5 Grade Cement</option>
-                                <option value="both">Both Grades</option>
-                                <option value="unsure">Not Sure</option>
+                            <label for="service">Service Interest</label>
+                            <select id="service" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="generator-parts">Generator Spare Parts</option>
+                                <option value="engine-kits">Engine Service Kits</option>
+                                <option value="maintenance">Maintenance & Repairs</option>
+                                <option value="filters">Filters & Accessories</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="quantity">Quantity / Message</label>
-                            <textarea id="quantity" name="quantity" rows="4" placeholder="Please specify the quantity of cement you need or any other details..." required></textarea>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about your requirements..." rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                        <button type="submit" class="btn btn-full">Send Message</button>
                     </form>
-                    <div id="formSuccess" class="form-success" style="display: none;">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Thank You!</h3>
-                        <p>Your inquiry has been submitted successfully. We'll contact you shortly.</p>
-                    </div>
                 </div>
             </div>
-            
-            <div class="map-section fade-up">
-                <h2>Our Location</h2>
-                <div class="map-container">
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <p>Google Maps Embed - Hai Mauna, Yei Road, Juba, South Sudan</p>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.112891420636!2d31.55814927417915!3d4.851995095191255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x171f83b369a97d2f%3A0x8b5e58676d2f7e7b!2sJuba%2C%20South%20Sudan!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer delivery services?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer delivery services throughout Juba and can arrange shipping to other locations in South Sudan. Delivery charges may apply depending on the location and size of the order.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I verify the authenticity of your parts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our parts come with manufacturer documentation and serial numbers that can be verified. We source directly from authorized distributors and provide certificates of authenticity upon request.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your return policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept returns of unused parts in original packaging within 14 days of purchase. Special order items and custom parts may have different return policies. Please contact us for specific details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide technical support?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our technical team is available to provide guidance on part selection, installation, and troubleshooting. We offer both phone support and on-site technical assistance when needed.</p>
                     </div>
                 </div>
             </div>
@@ -141,70 +195,55 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Simba Cement</h3>
-                    <p>Your trusted cement supplier in Juba, South Sudan. Building South Sudan, one bag at a time.</p>
+                <div class="footer-logo">
+                    <h2 class="logo">Bakumba Spare Parts</h2>
+                    <p>Your trusted partner for heavy-duty engine and generator spare parts in South Sudan.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-column">
+                <div class="footer-links">
                     <h3>Quick Links</h3>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="services.html">Our Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Products</h3>
-                    <ul class="footer-links">
-                        <li><a href="products.html">42.5 Grade Cement</a></li>
-                        <li><a href="products.html">32.5 Grade Cement</a></li>
-                        <li><a href="products.html">Bulk Orders</a></li>
-                        <li><a href="products.html">Delivery Service</a></li>
-                        <li><a href="products.html">Reseller Program</a></li>
+                <div class="footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#generator-parts">Generator Parts</a></li>
+                        <li><a href="services.html#engine-kits">Engine Service Kits</a></li>
+                        <li><a href="services.html#maintenance">Maintenance & Repairs</a></li>
+                        <li><a href="services.html#filters">Filters & Accessories</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul class="contact-info">
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Hai Mauna, Yei Road, Juba, South Sudan</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <span>0921 000 400</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>simbacement.jubasupply@gmail.com</span>
-                        </li>
-                    </ul>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Mahattah Yei, Opposite MCC Building, Juba, South Sudan</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+211 928 981 015<br>0928 981 015</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>daniellemi264@gmail.com</p>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Simba Cement Wholesale - Juba Supply Trucks. All Rights Reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2025 Bakumba Spare Parts. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/0921000400" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Font Awesome and Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="script.js"></script>
 </body>
