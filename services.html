@@ -3,205 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - JunubMart</title>
-    <meta name="description" content="Discover JunubMart's premium services including fast delivery, tech gadgets, and educational technology solutions.">
-    <meta name="keywords" content="JunubMart, services, delivery, tech gadgets, educational tech, Juba, South Sudan">
-    <meta name="author" content="JunubMart">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Our Services | Bakumba Spare Parts</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header & Navigation -->
     <header>
         <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">
-                    <img src="assets/junubmart-logo.png" alt="JunubMart" class="logo-image">
-                    <div class="logo-text">
-                        JUNUB <span>MART</span>
-                    </div>
-                </a>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <a href="index.html" class="logo">Bakumba Spare Parts</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="active">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#generator-parts">Generator Spare Parts</a>
+                            <a href="#engine-kits">Engine Service Kits</a>
+                            <a href="#maintenance">Maintenance & Repairs</a>
+                            <a href="#filters">Filters & Accessories</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
             </nav>
         </div>
     </header>
 
-    <!-- Services Page Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="page-hero">
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://source.unsplash.com/random/1920x1080/?mechanic,tools,engine,maintenance')"></div>
+        <div class="page-hero-overlay">
             <div class="container">
-                <div class="page-hero-content">
-                    <h1>Our Services</h1>
-                    <p>Discover our premium services designed to meet your needs</p>
-                </div>
+                <h1>Our Services</h1>
+                <p>Comprehensive solutions for all your generator and engine needs</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Services Section -->
-        <section class="section">
-            <div class="container">
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-shipping-fast"></i>
-                        </div>
-                        <h3>Fast Delivery</h3>
-                        <p>We offer quick and reliable delivery services across Juba and surrounding areas. Our efficient logistics ensure your orders reach you in the shortest time possible.</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Same-day delivery in Juba</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Next-day delivery in surrounding areas</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Real-time tracking</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Tech Gadgets & Accessories</h3>
-                        <p>We provide the latest smartphones, tablets, laptops, and accessories from top international brands at competitive prices.</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Latest smartphone models</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Quality accessories</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Warranty support</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop"></i>
-                        </div>
-                        <h3>Educational Technology</h3>
-                        <p>We offer tools and devices to support learning and development, helping students and professionals access the technology they need.</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Educational tablets and laptops</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Learning software and apps</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Study accessories</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h3>Customer Support</h3>
-                        <p>Our dedicated customer support team is available to assist you with any questions or concerns about our products and services.</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> 24/7 customer support</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Product consultations</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> After-sales service</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-undo-alt"></i>
-                        </div>
-                        <h3>Easy Returns</h3>
-                        <p>We offer a hassle-free return policy for products that don't meet your expectations, ensuring you shop with confidence.</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> 14-day return policy</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Easy return process</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Full refund guarantee</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Quality Assurance</h3>
-                        <p>All our products undergo rigorous quality checks to ensure they meet our high standards before reaching our customers.</p>
-                        <ul style="text-align: left; margin-top: 1rem;">
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Product testing</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Authenticity verification</li>
-                            <li><i class="fas fa-check" style="color: var(--success); margin-right: 0.5rem;"></i> Quality certifications</li>
-                        </ul>
-                    </div>
+    <!-- Services Section -->
+    <section class="services-detail">
+        <div class="container">
+            <div id="generator-parts" class="service-detail-card">
+                <div class="service-detail-image">
+                    <div class="image-placeholder" style="background-image: url('https://source.unsplash.com/random/600x400/?generator,engine,parts')"></div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Generator Spare Parts</h2>
+                    <p>We supply genuine parts for Perkins, FG Wilson, Cummins, and CAT generators to ensure reliable power generation for your operations. Our comprehensive inventory includes:</p>
+                    <ul>
+                        <li>Alternators and voltage regulators</li>
+                        <li>Control panels and automatic transfer switches</li>
+                        <li>Engine components (pistons, cylinders, crankshafts)</li>
+                        <li>Cooling system parts (radiators, water pumps, thermostats)</li>
+                        <li>Fuel system components (injectors, pumps, lines)</li>
+                    </ul>
+                    <p>All our parts come with manufacturer warranties and are sourced directly from authorized distributors to guarantee authenticity and performance.</p>
+                    <a href="contact.html" class="btn">Inquire About Parts</a>
                 </div>
             </div>
-        </section>
 
-        <!-- CTA Section -->
-        <section class="section" style="background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: var(--white);">
-            <div class="container">
-                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    <h2>Ready to Experience Our Services?</h2>
-                    <p>Join thousands of satisfied customers who trust JunubMart for their shopping needs in South Sudan.</p>
-                    <div style="margin-top: 2rem;">
-                        <a href="contact.html" class="btn btn-secondary" style="margin-right: 1rem;">Contact Us</a>
-                        <a href="products.html" class="btn" style="background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3);">Shop Now</a>
-                    </div>
+            <div id="engine-kits" class="service-detail-card reverse">
+                <div class="service-detail-image">
+                    <div class="image-placeholder" style="background-image: url('https://source.unsplash.com/random/600x400/?engine,maintenance,kit')"></div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Engine Service Kits</h2>
+                    <p>Keep your equipment running at peak performance with our comprehensive service kits for Perkins engines. We offer both 500-hour and 1000-hour maintenance kits containing all necessary components for scheduled servicing:</p>
+                    <ul>
+                        <li>Oil filters, fuel filters, and air filters</li>
+                        <li>Gasket sets and seal kits</li>
+                        <li>Lubricants and coolants</li>
+                        <li>Belts, hoses, and clamps</li>
+                        <li>Spark plugs and glow plugs (where applicable)</li>
+                    </ul>
+                    <p>Our kits are designed to save you time and ensure you have everything needed for proper maintenance in one convenient package.</p>
+                    <a href="contact.html" class="btn">Order Service Kits</a>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <div id="maintenance" class="service-detail-card">
+                <div class="service-detail-image">
+                    <div class="image-placeholder" style="background-image: url('https://source.unsplash.com/random/600x400/?mechanic,workshop,generator')"></div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Maintenance & Repairs</h2>
+                    <p>Our expert technicians provide comprehensive servicing for generators and heavy-duty engines to maximize lifespan and performance. Our maintenance services include:</p>
+                    <ul>
+                        <li>Scheduled maintenance and inspections</li>
+                        <li>Diagnostic testing and troubleshooting</li>
+                        <li>Engine overhauls and rebuilds</li>
+                        <li>Electrical system repairs</li>
+                        <li>Emergency repair services</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                    <p>With years of experience working with industrial power systems, our team can handle everything from routine maintenance to complex repairs, minimizing your downtime.</p>
+                    <a href="contact.html" class="btn">Schedule Service</a>
+                </div>
+            </div>
+
+            <div id="filters" class="service-detail-card reverse">
+                <div class="service-detail-image">
+                    <div class="image-placeholder" style="background-image: url('https://source.unsplash.com/random/600x400/?fuel,filters,automotive')"></div>
+                </div>
+                <div class="service-detail-content">
+                    <h2>Fuel Filters & Accessories</h2>
+                    <p>Protect your equipment with our high-quality filtration products for major brands including Toyota and CAT. Proper filtration is essential for engine longevity and performance:</p>
+                    <ul>
+                        <li>Air filters for combustion air intake</li>
+                        <li>Oil filters for engine lubrication systems</li>
+                        <li>Fuel filters for diesel and gasoline engines</li>
+                        <li>Hydraulic filters for power systems</li>
+                        <li>Coolant filters and conditioners</li>
+                    </ul>
+                    <p>We stock a wide range of filters and accessories to meet the specific requirements of your equipment, ensuring optimal protection against contaminants that can cause premature wear and failure.</p>
+                    <a href="contact.html" class="btn">Browse Filters</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands">
+        <div class="container">
+            <h2 class="section-title">Trusted Brands We Supply</h2>
+            <div class="brands-container">
+                <div class="brand-logo">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Perkins</h3>
+                </div>
+                <div class="brand-logo">
+                    <i class="fas fa-bolt"></i>
+                    <h3>FG Wilson</h3>
+                </div>
+                <div class="brand-logo">
+                    <i class="fas fa-industry"></i>
+                    <h3>Cummins</h3>
+                </div>
+                <div class="brand-logo">
+                    <i class="fas fa-tools"></i>
+                    <h3>Caterpillar</h3>
+                </div>
+                <div class="brand-logo">
+                    <i class="fas fa-car"></i>
+                    <h3>Toyota</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Expert Advice on Your Equipment?</h2>
+                <p>Our technical team is ready to help you select the right parts and services for your specific needs.</p>
+                <a href="contact.html" class="btn btn-light">Contact Our Experts</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="assets/junubmart-logo.png" alt="JunubMart" class="footer-logo-image">
-                        <div class="footer-logo-text">
-                            JUNUB <span>MART</span>
-                        </div>
-                    </div>
-                    <p>Your trusted online store in Juba, South Sudan. We bring quality products and reliable services to your doorstep.</p>
+                <div class="footer-logo">
+                    <h2 class="logo">Bakumba Spare Parts</h2>
+                    <p>Your trusted partner for heavy-duty engine and generator spare parts in South Sudan.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="footer-column">
+                <div class="footer-links">
                     <h3>Quick Links</h3>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="products.html">Products</a>
-                        <a href="services.html">Services</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Customer Service</h3>
-                    <div class="footer-links">
-                        <a href="#">FAQ</a>
-                        <a href="#">Shipping Policy</a>
-                        <a href="#">Returns & Refunds</a>
-                        <a href="#">Payment Methods</a>
-                        <a href="#">Privacy Policy</a>
-                    </div>
+                <div class="footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#generator-parts">Generator Parts</a></li>
+                        <li><a href="#engine-kits">Engine Service Kits</a></li>
+                        <li><a href="#maintenance">Maintenance & Repairs</a></li>
+                        <li><a href="#filters">Filters & Accessories</a></li>
+                    </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-contact">
                     <h3>Contact Info</h3>
-                    <div class="footer-links">
-                        <p><i class="fas fa-map-marker-alt"></i> Juba, South Sudan</p>
-                        <p><i class="fas fa-phone"></i> +211 123 456 789</p>
-                        <p><i class="fas fa-envelope"></i> info@junubmart.com</p>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Mahattah Yei, Opposite MCC Building, Juba, South Sudan</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+211 928 981 015<br>0928 981 015</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>daniellemi264@gmail.com</p>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 JunubMart. All rights reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2023 Bakumba Spare Parts. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
